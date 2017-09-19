@@ -13,13 +13,14 @@ import UIKit
   var circleLabel: UILabel!
   var panRecognizer: UIPanGestureRecognizer!
   
-  @IBInspectable var outlineColor: UIColor = UIColor.blue
-  @IBInspectable var counterColor: UIColor = UIColor.orange
-  @IBInspectable var minValue: Int = 0
-  @IBInspectable var maxValue: Int = 8
-  @IBInspectable var lineWidth: CGFloat = 4.0
-  @IBInspectable var arcWidth: CGFloat = 80.0
-  @IBInspectable var arcAngle: Int = 270
+  @IBInspectable public var outlineColor: UIColor = UIColor.blue
+  @IBInspectable public var counterColor: UIColor = UIColor.orange
+  @IBInspectable public var minValue: Int = 0
+  @IBInspectable public var maxValue: Int = 8
+  @IBInspectable public var lineWidth: CGFloat = 4.0
+  @IBInspectable public var arcWidth: CGFloat = 80.0
+  @IBInspectable public var arcAngle: Int = 270
+  
   public var useInternalGestureRecognizer: Bool = false {
     didSet {
       if (useInternalGestureRecognizer)
@@ -63,7 +64,7 @@ import UIKit
     }
   }
   
-  @IBInspectable var counter: Int {
+  @IBInspectable public var counter: Int {
     get {
       return _counter
     }

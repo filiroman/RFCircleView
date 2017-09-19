@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       
       circleView.useInternalGestureRecognizer = true
-      
     }
 
     override func didReceiveMemoryWarning() {

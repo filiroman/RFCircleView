@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'RFCircleView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of RFCircleView.'
+  s.summary          = 'Universal Circle View for iOS, written in Swift & Autolayout'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Universal Circle View for iOS, written in Swift 3.0 & Autolayout. Uses Core Graphics Drawing and provides flexible appearance settings
                        DESC
 
   s.homepage         = 'https://github.com/filiroman/RFCircleView'

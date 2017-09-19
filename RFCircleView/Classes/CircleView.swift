@@ -20,7 +20,7 @@ import UIKit
   @IBInspectable var lineWidth: CGFloat = 4.0
   @IBInspectable var arcWidth: CGFloat = 80.0
   @IBInspectable var arcAngle: Int = 270
-  var useInternalGestureRecognizer: Bool = false {
+  public var useInternalGestureRecognizer: Bool = false {
     didSet {
       if (useInternalGestureRecognizer)
       {

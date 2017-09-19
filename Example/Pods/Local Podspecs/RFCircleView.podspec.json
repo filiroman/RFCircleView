@@ -1,8 +1,8 @@
 {
   "name": "RFCircleView",
   "version": "0.1.0",
-  "summary": "A short description of RFCircleView.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Universal Circle View for iOS, written in Swift & Autolayout",
+  "description": "Universal Circle View for iOS, written in Swift 3.0 & Autolayout. Uses Core Graphics Drawing and provides flexible appearance settings",
   "homepage": "https://github.com/filiroman/RFCircleView",
   "license": {
     "type": "MIT",

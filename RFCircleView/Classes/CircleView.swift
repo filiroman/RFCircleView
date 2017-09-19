@@ -150,9 +150,9 @@ import UIKit
     
     
     let startAngle: CGFloat = 3 * .pi/2 - arcAngleRadians/2
-    let endAngle: CGFloat = 3 * .pi/2 + arcAngleRadians/2
+    //let endAngle: CGFloat = 3 * .pi/2 + arcAngleRadians/2
     
-    let path = UIBezierPath(arcCenter: center,
+    /*let path = UIBezierPath(arcCenter: center,
                             radius: radius/2 - arcWidth/2,
                             startAngle: startAngle,
                             endAngle: endAngle,
@@ -160,31 +160,41 @@ import UIKit
     
     path.lineWidth = arcWidth
     counterColor.setStroke()
-    path.stroke()
+    path.stroke()*/
     
     
     let arcLengthPerValue = arcAngleRadians / CGFloat(maxValue - minValue)
     let outlineEndAngle = arcLengthPerValue * CGFloat(counter - minValue) + startAngle
     
     // outer line
-    let outlinePath = UIBezierPath(arcCenter: center,
+    /*let outlinePath = UIBezierPath(arcCenter: center,
                                    radius: (bounds.width - lineWidth)/2,
                                    startAngle: startAngle,
                                    endAngle: outlineEndAngle,
-                                   clockwise: true)
+                                   clockwise: true)*/
+    
+    let path = UIBezierPath(arcCenter: center,
+                            radius: radius/2 - arcWidth/2,
+                            startAngle: startAngle,
+                            endAngle: outlineEndAngle,
+                            clockwise: true)
+    
+    path.lineWidth = arcWidth
+    counterColor.setStroke()
+    path.stroke()
     
     //inner line
-    outlinePath.addArc(withCenter: center,
+    /*outlinePath.addArc(withCenter: center,
                        radius: bounds.width/2 - arcWidth + lineWidth/2,
                        startAngle: outlineEndAngle,
                        endAngle: startAngle,
-                       clockwise: false)
+                       clockwise: false)*/
     
-    outlinePath.close()
+    /*outlinePath.close()
     outlineColor.setStroke()
     outlineFillColor.setFill()
     outlinePath.lineWidth = lineWidth
-    outlinePath.stroke()
+    outlinePath.stroke()*/
     
   }
   

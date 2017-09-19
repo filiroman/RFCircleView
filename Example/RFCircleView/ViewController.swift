@@ -27,6 +27,11 @@ class ViewController: UIViewController {
     }
 
   @IBAction func buttonPressed(_ sender: UIButton) {
+    if sender == plusButton {
+      circleView.counter += 1
+    } else {
+      circleView.counter -= 1
+    }
   }
 }
 

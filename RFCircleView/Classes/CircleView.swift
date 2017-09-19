@@ -14,6 +14,7 @@ import UIKit
   var panRecognizer: UIPanGestureRecognizer!
   
   @IBInspectable public var outlineColor: UIColor = UIColor.blue
+  @IBInspectable public var outlineFillColor: UIColor = UIColor.blue
   @IBInspectable public var counterColor: UIColor = UIColor.orange
   @IBInspectable public var minValue: Int = 0
   @IBInspectable public var maxValue: Int = 8
@@ -181,6 +182,7 @@ import UIKit
     
     outlinePath.close()
     outlineColor.setStroke()
+    outlineFillColor.setFill()
     outlinePath.lineWidth = lineWidth
     outlinePath.stroke()
     
